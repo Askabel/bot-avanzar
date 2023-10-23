@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+version: '3'
+
+services:
+  app:
+    image: chatbot-meta:1.0 
+    restart: on-failure 
+    ports:
+      - 3000:3000 
+    environment: 
+      - JWT_TOKEN=${JWT_TOKEN}
+      - NUMBER_ID=${NUMBER_ID}
+=======
+version: '3'
+
+services:
+  app:
+    image: chatbot-meta:1.0 
+    restart: on-failure 
+    ports:
+      - 3000:3000 
+    environment: 
+      - JWT_TOKEN=${JWT_TOKEN}
+      - NUMBER_ID=${NUMBER_ID}
+>>>>>>> 1f144df7fc64a8f831986de09cb165612bacc07a
+      - VERIFY_TOKEN=${VERIFY_TOKEN}
